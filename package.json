@@ -1,0 +1,42 @@
+{
+  "name": "@liedsonc/auth-supabase",
+  "version": "0.1.1",
+  "description": "Supabase integration adapter for @liedsonc/core-auth-kit",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": ["dist", "README.md", "sql"],
+  "bin": {
+    "auth-supabase-migrate": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["auth", "authentication", "supabase", "auth-kit", "core-auth-kit"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@liedsonc/core-auth-kit": "latest",
+    "@supabase/supabase-js": "^2.39.0",
+    "bcryptjs": "^2.4.3"
+  },
+  "peerDependencies": {
+    "@liedsonc/core-auth-kit": "latest"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^20",
+    "tsup": "^8.0.0",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,9 @@
+app/
+.next/
+node_modules/
+*.log
+.env*
+tsconfig.json
+tsup.config.ts
+.gitignore
+README.md
