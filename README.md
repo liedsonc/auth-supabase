@@ -177,6 +177,10 @@ function App() {
 - Email existence is not revealed in forgot password flow
 - All database queries use parameterized statements
 
+## Contributors
+
+- **liedsonc** – author
+
 ## License
 
 MIT
